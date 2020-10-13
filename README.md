@@ -1,4 +1,6 @@
-<img width="50%" src="https://www.mrsoft.by/images/header/logo_mrsoft.svg" />
+<div align="center">
+  <img width="50%" src="https://www.mrsoft.by/images/header/logo_mrsoft.svg" />
+</div>
 
 <h1 align="center">Тестовое задание</h1>
 
