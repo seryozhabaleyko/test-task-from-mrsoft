@@ -1,5 +1,6 @@
 html,
-body {
+body,
+#root {
     height: 100%;
 }
 
@@ -11,13 +12,6 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
-#root {
-    min-height: 100%;
-    display: grid;
-    grid-template-rows: 65px 1fr auto;
-}
-
-.footer {
-    grid-row-start: 3;
-    grid-row-end: 4;
+.main {
+    padding: 50px 0;
 }
