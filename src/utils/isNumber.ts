@@ -1,6 +1,7 @@
 /**
  *
  * @param value
+ * @returns {boolean}
  */
 
 export function isNumber(value: any): boolean {

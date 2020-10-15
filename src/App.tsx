@@ -5,13 +5,12 @@ import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField';
 import Container from '@material-ui/core/Container';
 import Snackbar from '@material-ui/core/Snackbar';
-import { Alert } from '@material-ui/lab';
+import { Alert, Color } from '@material-ui/lab';
 
 import { isNumber } from './utils/isNumber';
 import { isEmpty } from './utils/IsEmpty';
 import { useFetchWords } from './hooks/useFetchWords';
 import { Preloader } from './components/preloader';
-import { Color } from '@material-ui/lab';
 
 function App() {
     const [control, setControl] = useState('');
@@ -95,13 +94,7 @@ function App() {
                     />
                 </div>
                 <br />
-                <div
-                    style={{
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'space-between',
-                    }}
-                >
+                <div className="grid">
                     <FormControlLabel
                         value="end"
                         control={
@@ -115,9 +108,8 @@ function App() {
                         labelPlacement="end"
                     />
 
-                    <div>
+                    <div className="actions">
                         <Button
-                            style={{ marginRight: '20px' }}
                             variant="contained"
                             color="primary"
                             onClick={searchByLength}
